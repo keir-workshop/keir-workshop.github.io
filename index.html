@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KEIR @ CIKM 2026 - The Third Workshop on Knowledge-Enhanced Information Retrieval</title>
+    <meta name="description"
+        content="The Third Workshop on Knowledge-Enhanced Information Retrieval (KEIR @ CIKM 2026). November 8th, 2026 at Sapienza University of Rome, Italy.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/keir/favicon.svg">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="KEIR @ CIKM 2026 - The Third Workshop on Knowledge-Enhanced Information Retrieval">
+    <meta property="og:description"
+        content="The Third Workshop on Knowledge-Enhanced Information Retrieval (KEIR @ CIKM 2026). November 8th, 2026 at Sapienza University of Rome, Italy.">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="KEIR @ CIKM 2026 - The Third Workshop on Knowledge-Enhanced Information Retrieval">
+    <meta name="twitter:description"
+        content="The Third Workshop on Knowledge-Enhanced Information Retrieval (KEIR @ CIKM 2026). November 8th, 2026 at Sapienza University of Rome, Italy.">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation Menu -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <!-- Desktop Navigation -->
+        <div class="navbar-nav mx-auto desktop-nav" id="desktop-nav">
+            <div class="nav-group-block">
+                <div class="nav-group-label">Workshop Overview</div>
+                <div class="nav-overview-group">
+                    <a class="nav-link" href="#home">Overview<span class="deadline-badge"
+                            style="opacity:0;">TBD</span></a>
+                    <a class="nav-link" href="#speakers">Speakers<span class="deadline-badge"
+                            style="opacity:0;">TBD</span></a>
+                    <a class="nav-link" href="#organizers">Organizers<span class="deadline-badge"
+                            style="opacity:0;">TBD</span></a>
+                    <a class="nav-link" href="#schedule">Schedule<span class="deadline-badge"
+                            style="opacity:0;">TBD</span></a>
+                    <a class="nav-link" href="#community">Community<span class="deadline-badge"
+                            style="opacity:0;">TBD</span></a>
+                </div>
+            </div>
+            <div class="nav-separator"></div>
+            <div class="nav-group-block">
+                <div class="nav-group-label">Submit to the workshop</div>
+                <div class="nav-submission-group">
+                    <a class="nav-link" href="call-for-papers">Call for Papers<span
+                            class="deadline-badge submission-open">Submission open</span></a>
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle updates-btn" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <span class="live-dot-small"></span>
+                            Updates
+                        </a>
+                        <span class="deadline-badge" style="opacity:0;">TBD</span>
+                        <div class="dropdown-menu updates-dropdown">
+                            <div class="updates-content">
+                                <div class="update-item">
+                                    <div class="update-date">
+                                        <div class="date-badge-small">
+                                            <span class="month">JUL</span>
+                                            <span class="day">10</span>
+                                        </div>
+                                    </div>
+                                    <div class="update-content">
+                                        <div class="update-card">
+                                            <div class="update-header">
+                                                <h6 class="update-title">
+                                                    <i class="fas fa-champagne-glasses text-success me-2"></i>
+                                                    Workshop Accepted at CIKM 2026!
+                                                </h6>
+                                                <span class="update-tag success">Accepted</span>
+                                            </div>
+                                            <p class="update-text">
+                                                KEIR will run as a <strong>half-day, in-person workshop</strong> at CIKM 2026
+                                                in Rome on <strong>November 8, 2026</strong>. The call for papers is open.
+                                            </p>
+                                            <div class="update-meta">
+                                                <small class="text-muted">
+                                                    <i class="fas fa-clock me-1"></i>
+                                                    July 10, 2026
+                                                </small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="container mobile-nav">
+                <div class="d-flex justify-content-between align-items-center">
+                    <span class="navbar-brand mb-0 h1">KEIR @ CIKM 2026</span>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobile-nav"
+                        aria-controls="mobile-nav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse" id="mobile-nav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Overview</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#speakers">Speakers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#organizers">Organizers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#schedule">Schedule</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#community">Community</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="call-for-papers">Call for Papers</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header id="home" class="py-5 header-extra-padding text-center">
+        <!-- Animated Biosignal Background -->
+        <div class="biosignal-background">
+            <div class="biosignal-row">
+                <img src="assets/keir/graph.svg" class="biosignal-icon" alt="">
+                <img src="assets/keir/doc.svg" class="biosignal-icon" alt="">
+                <img src="assets/keir/lens.svg" class="biosignal-icon" alt="">
+                <img src="assets/keir/agent.svg" class="biosignal-icon" alt="">
+                <img src="assets/keir/database.svg" class="biosignal-icon" alt="">
+                <img src="assets/keir/book.svg" class="biosignal-icon" alt="">
+                <img src="assets/keir/ranking.svg" class="biosignal-icon" alt="">
+                <img src="assets/keir/embedding.svg" class="biosignal-icon" alt="">
+                <img src="assets/keir/link.svg" class="biosignal-icon" alt="">
+                <img src="assets/keir/table.svg" class="biosignal-icon" alt="">
+                <img src="assets/keir/query.svg" class="biosignal-icon" alt="">
+                <img src="assets/keir/pipeline.svg" class="biosignal-icon" alt="">
+            </div>
+            <div class="biosignal-row">
+                <img src="assets/keir/graph.svg" class="biosignal-icon" alt="">
+                <img src="assets/keir/doc.svg" class="biosignal-icon" alt="">
+                <img src="assets/keir/lens.svg" class="biosignal-icon" alt="">
+                <img src="assets/keir/agent.svg" class="biosignal-icon" alt="">
+                <img src="assets/keir/database.svg" class="biosignal-icon" alt="">
+                <img src="assets/keir/book.svg" class="biosignal-icon" alt="">
+                <img src="assets/keir/ranking.svg" class="biosignal-icon" alt="">
+                <img src="assets/keir/embedding.svg" class="biosignal-icon" alt="">
+                <img src="assets/keir/link.svg" class="biosignal-icon" alt="">
+                <img src="assets/keir/table.svg" class="biosignal-icon" alt="">
+                <img src="assets/keir/query.svg" class="biosignal-icon" alt="">
+                <img src="assets/keir/pipeline.svg" class="biosignal-icon" alt="">
+            </div>
+            <div class="biosignal-row">
+                <img src="assets/keir/graph.svg" class="biosignal-icon" alt="">
+                <img src="assets/keir/doc.svg" class="biosignal-icon" alt="">
+                <img src="assets/keir/lens.svg" class="biosignal-icon" alt="">
+                <img src="assets/keir/agent.svg" class="biosignal-icon" alt="">
+                <img src="assets/keir/database.svg" class="biosignal-icon" alt="">
+                <img src="assets/keir/book.svg" class="biosignal-icon" alt="">
+                <img src="assets/keir/ranking.svg" class="biosignal-icon" alt="">
+                <img src="assets/keir/embedding.svg" class="biosignal-icon" alt="">
+                <img src="assets/keir/link.svg" class="biosignal-icon" alt="">
+                <img src="assets/keir/table.svg" class="biosignal-icon" alt="">
+                <img src="assets/keir/query.svg" class="biosignal-icon" alt="">
+                <img src="assets/keir/pipeline.svg" class="biosignal-icon" alt="">
+            </div>
+        </div>
+
+        <div class="container position-relative">
+            <div class="workshop-title">
+                <h1 class="display-3">
+                    <div class="title-main">Knowledge-Enhanced Information Retrieval</div>
+                    <div class="title-workshop">Third KEIR Workshop @ CIKM 2026</div>
+                </h1>
+                <p class="lead">Sunday, November 8th, 2026 | Sapienza University of Rome | Rome, Italy</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Abstract Section -->
+    <section id="abstract" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Workshop Description</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <p class="lead">
+                        Modern information retrieval (IR) is built on pretrained language models whose parametric
+                        knowledge has driven strong gains in semantic understanding. Yet, this knowledge is frozen at
+                        training time, opaque, and shallow on long-tail, domain-specific, and fast-changing
+                        information, yielding imprecise, non-factual, or poorly grounded results.
+                        <strong>Knowledge-enhanced IR</strong> addresses this by augmenting retrieval systems&mdash;and
+                        the language models that power them&mdash;with external knowledge: unstructured or structured,
+                        gold or synthetic, increasingly across modalities. Large language models are now reshaping how
+                        this knowledge is acquired and integrated&mdash;for example, autonomous agents that plan,
+                        reason, and decide what to search; automated knowledge curation and linking; and systems that
+                        interleave retrieval and generation, learning when to consult external evidence and when to
+                        answer from parametric knowledge.
+                    </p>
+                    <p class="lead">
+                        The Third Workshop on Knowledge-Enhanced Information Retrieval (KEIR @ CIKM 2026) gathers
+                        researchers and practitioners from IR, natural language processing, data mining, and knowledge
+                        management to advance the principled integration of external knowledge into IR. KEIR welcomes
+                        both methodological and applied contributions, with particular attention to
+                        knowledge-intensive, domain-sensitive fields such as science, medicine, law, and finance,
+                        where factuality, trust, and discovery are paramount.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Attend Section -->
+    <section id="how-to-attend" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <h3 class="text-start">How to Attend</h3>
+                    <p class="lead">
+                        KEIR is a half-day, in-person workshop co-located with the 35th ACM International Conference on
+                        Information and Knowledge Management (CIKM 2026). Registration is required through the official
+                        CIKM 2026 conference website. The workshop takes place at
+                        <a href="https://cikm2026.diag.uniroma1.it/venues/" target="_blank"
+                            class="text-decoration-none">Sapienza University of Rome</a>.
+                        Please note that, following the CIKM 2026 policy, the conference and its workshops are fully in
+                        person: hybrid presentation or attendance options cannot be accommodated.
+                    </p>
+                    <p class="lead">
+                        <a href="https://cikm2026.diag.uniroma1.it/" target="_blank" class="btn btn-primary">
+                            Register on the CIKM 2026 Website
+                        </a>
+                    </p>
+
+                    <div class="row align-items-center mt-4 g-4">
+                        <div class="col-lg-7">
+                            <div class="card venue-card">
+                                <img src="assets/keir/venue-sapienza.jpg" class="card-img-top" alt="San Pietro in Vincoli Campus, Sapienza University of Rome">
+                                <div class="card-body py-3">
+                                    <p class="mb-0 small text-muted text-center">
+                                        <i class="fas fa-location-dot me-1"></i>
+                                        San Pietro in Vincoli Campus, Faculty of Engineering, Sapienza University of Rome<br>
+                                        Via Eudossiana 18, 00184 Roma &middot;
+                                        <a href="https://maps.google.com/?q=Via+Eudossiana+18,+00184+Roma" target="_blank"
+                                            class="text-decoration-none">Open in Google Maps</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 text-center">
+                            <a href="https://cikm2026.diag.uniroma1.it/" target="_blank">
+                                <img src="assets/keir/cikm2026-logo.png" alt="CIKM 2026 - Rome, Italy" class="cikm-logo">
+                            </a>
+                            <p class="small text-muted mt-2 mb-0">
+                                35th ACM International Conference on<br>Information and Knowledge Management
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Speakers Section -->
+    <section id="speakers" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Invited Speakers</h2>
+            <div class="row justify-content-center" id="speakers-row">
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card h-100 speaker-card">
+                        <img src="assets/keir/speaker-tba.svg" class="card-img-top" alt="Speaker to be announced">
+                        <div class="card-body">
+                            <h5 class="card-title">To Be Announced</h5>
+                            <p class="card-text">Academic Keynote</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card h-100 speaker-card">
+                        <img src="assets/keir/speaker-tba.svg" class="card-img-top" alt="Speaker to be announced">
+                        <div class="card-body">
+                            <h5 class="card-title">To Be Announced</h5>
+                            <p class="card-text">Industry Keynote</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Organizers Section -->
+    <section id="organizers" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Organizers</h2>
+            <div class="row justify-content-center" id="organizers-row">
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <div class="card h-100 organizer-card">
+                        <img src="assets/keir/person.svg" class="card-img-top" alt="Giacomo Frisoni">
+                        <div class="card-body">
+                            <h5 class="card-title">Giacomo Frisoni</h5>
+                            <p class="card-text">University of Bologna</p>
+                            <div class="social-icons">
+                                <a href="https://giacomofrisoni.github.io/" target="_blank" title="Website"><i
+                                        class="fas fa-earth-americas globe-icon"></i></a>
+                                <a href="mailto:giacomo.frisoni@unibo.it" title="Email"><i
+                                        class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <div class="card h-100 organizer-card">
+                        <img src="assets/keir/person.svg" class="card-img-top" alt="Luca Ragazzi">
+                        <div class="card-body">
+                            <h5 class="card-title">Luca Ragazzi</h5>
+                            <p class="card-text">University of Bologna</p>
+                            <div class="social-icons">
+                                <a href="mailto:l.ragazzi@unibo.it" title="Email"><i
+                                        class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <div class="card h-100 organizer-card">
+                        <img src="assets/keir/person.svg" class="card-img-top" alt="Gianluca Moro">
+                        <div class="card-body">
+                            <h5 class="card-title">Gianluca Moro</h5>
+                            <p class="card-text">University of Bologna</p>
+                            <div class="social-icons">
+                                <a href="https://disi-unibo-nlp.github.io/" target="_blank" title="Website"><i
+                                        class="fas fa-earth-americas globe-icon"></i></a>
+                                <a href="mailto:gianluca.moro@unibo.it" title="Email"><i
+                                        class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <div class="card h-100 organizer-card">
+                        <img src="assets/keir/person.svg" class="card-img-top" alt="Zaiqiao Meng">
+                        <div class="card-body">
+                            <h5 class="card-title">Zaiqiao Meng</h5>
+                            <p class="card-text">Huazhong University of Science and Technology</p>
+                            <div class="social-icons">
+                                <a href="mailto:zqmeng@hust.edu.cn" title="Email"><i
+                                        class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <div class="card h-100 organizer-card">
+                        <img src="assets/keir/person.svg" class="card-img-top" alt="Jinyuan Fang">
+                        <div class="card-body">
+                            <h5 class="card-title">Jinyuan Fang</h5>
+                            <p class="card-text">University of Glasgow</p>
+                            <div class="social-icons">
+                                <a href="mailto:j.fang.2@research.gla.ac.uk" title="Email"><i
+                                        class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
+                    <div class="card h-100 organizer-card">
+                        <img src="assets/keir/person.svg" class="card-img-top" alt="Yufang Hou">
+                        <div class="card-body">
+                            <h5 class="card-title">Yufang Hou</h5>
+                            <p class="card-text">IT:U Austria &amp; IBM Research</p>
+                            <div class="social-icons">
+                                <a href="mailto:yufang.hou@it-u.at" title="Email"><i
+                                        class="fas fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+
+    <!-- Community and Resources Section -->
+    <!-- Schedule Section -->
+    <section id="schedule" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Schedule</h2>
+
+            <div class="day-container">
+                <h3 class="day-header">November 8th, 2026 - CIKM Workshop Day</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="time-block">9:00 - 9:10</div>
+                        <div class="content-block">
+                            <h4>Opening Remarks</h4>
+                        </div>
+                        <div class="speaker-block">Organizers</div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="time-block">9:10 - 9:35</div>
+                        <div class="content-block">
+                            <h4>Keynote Talk 1</h4>
+                            <p class="small text-muted">Academic keynote</p>
+                        </div>
+                        <div class="speaker-block">TBD (Academia)</div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="time-block">9:35 - 10:00</div>
+                        <div class="content-block">
+                            <h4>Keynote Talk 2</h4>
+                            <p class="small text-muted">Industry keynote</p>
+                        </div>
+                        <div class="speaker-block">TBD (Industry)</div>
+                    </div>
+
+                    <div class="timeline-item break">
+                        <div class="time-block">10:00 - 10:30</div>
+                        <div class="content-block">
+                            <h4>Coffee Break</h4>
+                        </div>
+                        <div class="speaker-block"></div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="time-block">10:30 - 11:30</div>
+                        <div class="content-block">
+                            <h4>Poster Session</h4>
+                            <p class="small text-muted">Contributed works, presented in person</p>
+                        </div>
+                        <div class="speaker-block">Authors of accepted papers</div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="time-block">11:30 - 12:00</div>
+                        <div class="content-block">
+                            <h4>Panel + Live Community Survey &amp; Closing Remarks</h4>
+                            <p class="small text-muted">Speakers and attendees collaboratively identify open problems
+                                and shape a shared research agenda</p>
+                        </div>
+                        <div class="speaker-block">Organizers, Speakers &amp; Attendees</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="community" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Community</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-6 mb-4">
+                    <a href="https://discord.gg/3x8BqJkRy" target="_blank" class="text-decoration-none">
+                        <div class="card h-100 community-card">
+                            <div class="card-body">
+                                <div class="text-center mb-4">
+                                    <div class="community-icon mb-3">
+                                        <i class="fab fa-discord fa-3x text-primary"></i>
+                                    </div>
+                                    <h4 class="card-title">Join the KEIR Discord Community</h4>
+                                </div>
+                                <p class="card-text" style="font-size: 1rem;">
+                                    Connect with researchers working on knowledge-enhanced information retrieval.
+                                    Ask questions about submissions, share ideas, and stay in touch with speakers,
+                                    organizers, and attendees before and after the workshop.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    
+
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white text-center">
+        <div class="container">
+            <p class="mb-1">&copy; 2026 KEIR Workshop Organizers.</p>
+            <p class="mb-0" style="font-size: 0.85rem; opacity: 0.8;">
+                Website template by <a href="https://brainbodyfm-workshop.github.io/" target="_blank"
+                    class="text-white text-decoration-underline">Mehdi Azabou</a> (BrainBodyFM Workshop),
+                adapted with permission. Previous editions:
+                <a href="https://keirworkshop.github.io/" target="_blank"
+                    class="text-white text-decoration-underline">KEIR @ ECIR 2024</a> &middot;
+                <a href="https://keir-ecir2025.github.io/" target="_blank"
+                    class="text-white text-decoration-underline">KEIR @ ECIR 2025</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script src="biosignal-animation.js"></script>
+</body>
+
+</html>
