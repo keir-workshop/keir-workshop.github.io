@@ -2923,3 +2923,18 @@ footer p {
 .cikm-logo:hover {
     transform: scale(1.04);
 }
+
+
+/* Center organizer-card content (name, affiliation, icons) */
+.organizer-card {
+    text-align: center;
+}
+
+.organizer-card .card-img-top {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.organizer-card .social-icons {
+    justify-content: center !important;
+}
