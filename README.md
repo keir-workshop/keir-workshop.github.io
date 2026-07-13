@@ -25,15 +25,3 @@ python3 -m http.server 8000
 
 Then open http://localhost:8000. Note: the internal links use extensionless URLs (e.g., `call-for-papers`), which GitHub Pages resolves automatically; when testing with a simple local server, append `.html` manually or use `npx serve .` which also resolves them.
 
-## Deployment (GitHub Pages)
-
-1. Push these files to the repository's default branch.
-2. Settings → Pages → deploy from branch (`main`, root).
-3. Share the resulting URL with the CIKM 2026 workshop chairs (due July 13).
-
-## TODO before launch
-
-- [ ] Replace the EasyChair placeholder URL (`https://easychair.org/conferences/?conf=keir2026`) with the actual submission link (it appears in the nav button and in the Submission Guidelines of `call-for-papers.html`).
-- [ ] Add invited speakers when confirmed (replace the two TBA cards in `index.html`).
-- [ ] Replace `assets/keir/person.svg` placeholders with organizer photos when available.
-- [ ] Add a Schedule section closer to the event and an Accepted Papers section after notification (the original template's markup for both can be recovered from the BrainBodyFM repository).
