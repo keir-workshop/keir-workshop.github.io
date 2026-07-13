@@ -2925,14 +2925,34 @@ footer p {
 }
 
 
-/* Center organizer-card content (name, affiliation, icons) */
-.organizer-card {
-    text-align: center;
-}
+/* Center organizer-card content (name, affiliation, icons). */
+@media (min-width: 769px) {
+    .organizer-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 
-.organizer-card .card-img-top {
-    margin-left: auto;
-    margin-right: auto;
+    .organizer-card .card-img-top {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .organizer-card .card-body {
+        width: 100%;
+        padding-left: 0.5rem !important;
+        padding-right: 0.5rem !important;
+        text-align: center !important;
+    }
+
+    .organizer-card .card-title,
+    .organizer-card .card-text {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center !important;
+    }
 }
 
 .organizer-card .social-icons {
