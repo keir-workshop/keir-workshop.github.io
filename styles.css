@@ -2925,7 +2925,10 @@ footer p {
 }
 
 
-/* Center organizer-card content (name, affiliation, icons). */
+/* Center organizer-card content (name, affiliation, icons).
+   Flex column + symmetric padding: centers every child regardless of
+   image width or inherited padding. Scoped to desktop so the template's
+   compact row layout on small screens is untouched. */
 @media (min-width: 769px) {
     .organizer-card {
         display: flex;
@@ -2935,6 +2938,11 @@ footer p {
     }
 
     .organizer-card .card-img-top {
+        width: 100%;
+        max-width: 150px;
+        height: auto;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
         margin-left: auto !important;
         margin-right: auto !important;
     }
