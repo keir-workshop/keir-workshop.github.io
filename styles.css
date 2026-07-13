@@ -2966,3 +2966,27 @@ footer p {
 .organizer-card .social-icons {
     justify-content: center !important;
 }
+
+/* Bulletproof organizer alignment (targets any img inside #organizers cards) */
+@media (min-width: 769px) {
+    #organizers .card img {
+        display: block !important;
+        width: 150px !important;
+        height: 150px !important;
+        max-width: 100% !important;
+        object-fit: cover !important;
+        margin: 1.5rem auto 1rem !important;
+        float: none !important;
+    }
+
+    #organizers .card,
+    #organizers .card-body {
+        text-align: center !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    #organizers .social-icons {
+        justify-content: center !important;
+    }
+}
