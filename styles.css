@@ -2990,3 +2990,37 @@ footer p {
         justify-content: center !important;
     }
 }
+
+/* Supported-by section (DARE acknowledgment) */
+.supported-section {
+    padding: 2.5rem 0 3rem;
+    background-color: white;
+    border-top: 1px solid #f0f0f0;
+}
+
+.supported-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #888;
+    margin-bottom: 1.25rem;
+}
+
+.dare-logo {
+    height: 76px;
+    width: auto;
+    opacity: 0.95;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.dare-logo:hover {
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+@media (max-width: 768px) {
+    .dare-logo {
+        height: 60px;
+    }
+}
