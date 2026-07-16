@@ -3024,3 +3024,14 @@ footer p {
         height: 60px;
     }
 }
+
+
+/* Short bio inside speaker cards */
+.speaker-card .speaker-bio {
+    font-size: 0.78rem;
+    color: #666;
+    line-height: 1.45;
+    text-align: left;
+    margin-top: 0.4rem;
+    margin-bottom: 0;
+}
