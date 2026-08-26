@@ -24,4 +24,3 @@ python3 -m http.server 8000
 ```
 
 Then open http://localhost:8000. Note: the internal links use extensionless URLs (e.g., `call-for-papers`), which GitHub Pages resolves automatically; when testing with a simple local server, append `.html` manually or use `npx serve .` which also resolves them.
-
