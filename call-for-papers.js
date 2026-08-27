@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // KEIR @ CIKM 2026 milestone dates
         const milestones = [
             new Date('2026-07-15'), // Submissions Open
-            new Date('2026-09-13'), // Submission Deadline (AoE)
+            new Date('2026-09-16'), // Submission Deadline (AoE)
             new Date('2026-09-23'), // Accept/Reject Notification
             new Date('2026-11-08')  // Workshop
         ];
