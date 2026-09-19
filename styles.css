@@ -1787,11 +1787,11 @@ footer p {
     box-shadow: 0 1px 3px rgba(255, 68, 68, 0.3);
 }
 
-/* Submission Closed Badge - No animation */
+/* Submission Closed Badge - Red, no animation */
 .deadline-badge.submission-closed {
-    background: #6c757d;
+    background: #c62828;
     animation: none;
-    box-shadow: 0 1px 3px rgba(108, 117, 125, 0.3);
+    box-shadow: 0 1px 3px rgba(198, 40, 40, 0.3);
 }
 
 /* Travel Awards Badge - Gray */
