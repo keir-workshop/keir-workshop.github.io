@@ -2991,7 +2991,7 @@ footer p {
     }
 }
 
-/* Supported-by section (DARE acknowledgment) */
+/* Supported-by section (DARE + Fondazione Carisbo acknowledgment) */
 .supported-section {
     padding: 2.5rem 0 3rem;
     background-color: white;
@@ -3019,10 +3019,33 @@ footer p {
     transform: scale(1.03);
 }
 
+/* Row of supporter logos: side by side, wrapping on narrow screens */
+.supported-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem 3.5rem;
+}
+
 @media (max-width: 768px) {
     .dare-logo {
         height: 60px;
     }
+
+    .supported-logos {
+        gap: 1.75rem 2.5rem;
+    }
+}
+
+/* Notice under the Schedule heading (tentative program) */
+.schedule-note {
+    text-align: center;
+    font-size: 0.95rem;
+    color: #6c757d;
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
