@@ -3069,3 +3069,76 @@ footer p {
     margin-top: 0.4rem;
     margin-bottom: 0;
 }
+
+
+/* Accepted papers list (home page) */
+#accepted-papers {
+    background-color: white;
+}
+
+#accepted-papers .accepted-note {
+    font-size: 0.95rem;
+    line-height: 1.55;
+    color: #6c757d;
+    max-width: 620px;
+    margin: 0 auto 2.75rem;
+}
+
+.accepted-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem 1.25rem;
+    counter-reset: none;
+}
+
+.accepted-list .accepted-paper {
+    position: relative;
+    padding: 1rem 1.15rem 1rem 1.35rem;
+    background: #fafbff;
+    border: 1px solid #eceefb;
+    border-radius: 10px;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+/* thin indigo rule on the left, same hue as the drifting header icons */
+.accepted-list .accepted-paper::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 14px;
+    bottom: 14px;
+    width: 3px;
+    border-radius: 0 3px 3px 0;
+    background: #667eea;
+    opacity: 0.55;
+}
+
+.accepted-list .accepted-paper:hover {
+    background: #f4f6ff;
+    border-color: #d9ddf7;
+}
+
+.accepted-list .paper-title {
+    margin: 0;
+    font-size: 0.98rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #1a1a1a;
+}
+
+.accepted-list .paper-authors {
+    margin: 0.45rem 0 0;
+    font-size: 0.86rem;
+    font-weight: 400;
+    line-height: 1.45;
+    color: #1a1a1a;
+}
+
+@media (max-width: 768px) {
+    .accepted-list {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
