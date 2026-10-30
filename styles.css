@@ -3142,3 +3142,170 @@ footer p {
         grid-template-columns: minmax(0, 1fr);
     }
 }
+
+
+/* Proceedings section (Springer LNCS post-proceedings, home page) */
+#proceedings {
+    background-color: white;
+    border-top: 1px solid #f0f0f0;
+}
+
+#proceedings .proceedings-card {
+    max-width: 920px;
+    margin: 0 auto 3rem;
+    padding: 2rem 2.25rem;
+    background: #fafbff;
+    border: 1px solid #eceefb;
+    border-radius: 12px;
+}
+
+.lncs-logo {
+    max-width: 220px;
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    transition: transform 0.25s ease;
+}
+
+.lncs-logo:hover {
+    transform: scale(1.03);
+}
+
+#proceedings .proceedings-lead {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #1a1a1a;
+    margin-bottom: 0.9rem;
+}
+
+#proceedings .proceedings-deadline {
+    font-size: 0.95rem;
+    line-height: 1.55;
+    color: #333;
+    margin: 0;
+    padding: 0.75rem 1rem;
+    background: white;
+    border-left: 3px solid #667eea;
+    border-radius: 0 6px 6px 0;
+}
+
+#proceedings .proceedings-deadline i {
+    color: #667eea;
+}
+
+#proceedings .proceedings-subtitle {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin: 1.75rem 0 0.9rem;
+}
+
+.proceedings-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem 1rem;
+}
+
+.proceedings-links a {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    height: 100%;
+    padding: 0.8rem 1rem;
+    background: white;
+    border: 1px solid #eceefb;
+    border-radius: 10px;
+    color: #1a1a1a;
+    text-decoration: none;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.proceedings-links a:hover {
+    background: #f4f6ff;
+    border-color: #c9cff5;
+}
+
+.proceedings-links a:focus-visible,
+.previous-editions a:focus-visible {
+    outline: 2px solid #667eea;
+    outline-offset: 2px;
+}
+
+.proceedings-links i {
+    flex: 0 0 1.5rem;
+    width: 1.5rem;
+    margin-top: 0.15rem;
+    font-size: 1.1rem;
+    text-align: center;
+    color: #667eea;
+}
+
+.proceedings-links span {
+    font-size: 0.95rem;
+    font-weight: 600;
+    line-height: 1.35;
+}
+
+.proceedings-links small {
+    display: block;
+    margin-top: 0.2rem;
+    font-size: 0.82rem;
+    font-weight: 400;
+    color: #6c757d;
+}
+
+.previous-editions {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 920px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem 1rem;
+}
+
+.previous-editions li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.25rem 0.75rem;
+    padding: 0.85rem 1.1rem;
+    border: 1px solid #eceefb;
+    border-radius: 10px;
+}
+
+.previous-editions .edition-name {
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.previous-editions .edition-place {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.previous-editions .edition-links {
+    display: flex;
+    flex-basis: 100%;
+    gap: 0.9rem;
+    font-size: 0.9rem;
+}
+
+.previous-editions .edition-links a {
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    #proceedings .proceedings-card {
+        padding: 1.25rem;
+    }
+
+    .proceedings-links,
+    .previous-editions {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+}
