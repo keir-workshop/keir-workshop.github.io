@@ -3178,21 +3178,6 @@ footer p {
     margin-bottom: 0.9rem;
 }
 
-#proceedings .proceedings-deadline {
-    font-size: 0.95rem;
-    line-height: 1.55;
-    color: #333;
-    margin: 0;
-    padding: 0.75rem 1rem;
-    background: white;
-    border-left: 3px solid #667eea;
-    border-radius: 0 6px 6px 0;
-}
-
-#proceedings .proceedings-deadline i {
-    color: #667eea;
-}
-
 #proceedings .proceedings-subtitle {
     font-size: 1.05rem;
     font-weight: 600;
@@ -3308,4 +3293,46 @@ footer p {
         grid-template-columns: minmax(0, 1fr);
     }
 
+}
+
+
+/* Keynote talk inside the speaker card (title and abstract) */
+.speaker-card .speaker-talk {
+    text-align: left;
+    margin-top: 1rem;
+    padding-top: 0.9rem;
+    border-top: 1px solid #eceefb;
+}
+
+.speaker-card .speaker-talk-label {
+    margin-bottom: 0.15rem;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #667eea;
+}
+
+.speaker-card .speaker-talk-title {
+    margin-bottom: 0.4rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.speaker-card .speaker-talk-abstract {
+    margin-bottom: 0;
+    font-size: 0.78rem;
+    line-height: 1.45;
+    color: #666;
+    text-wrap: pretty;
+}
+
+/* Balanced wrapping in the Updates panel (no single-word last lines) */
+.update-title {
+    text-wrap: balance;
+}
+
+.update-text {
+    text-wrap: pretty;
 }
